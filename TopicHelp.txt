@@ -1,0 +1,11 @@
+topic types:
+# : Topic (normal)
+$ : Command (advanced)
+& : User private room (special type)
+^ : Developer tool (advanced)
+* : Admin Tool (advanced)
+/ : User tool (basic)
+> : Debugging tool (advanced)
+none : leftover data/text
++ : Code generated topic
+% : module

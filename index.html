@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>NamItemsChat</title>
+  <link href="https://nyokosatouhitems.nyokosatouhsato.repl.co/style.css" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
+  <script src="socket.io/socket.io.min.js" defer></script>
+  <script src="https://www.windows93.net/c/programs/kof93/js/jquery.js" defer></script>
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <div class="items">
+    <h1>NamItems Discussion</h1>
+  </div>
+  <div class="items">
+    <h3>Version: v1.0</h3>
+  </div>
+  <div class="items" style="position:fixed;text-align:center !important">
+    <p>Online:</p>
+    <p id="onlineUsers"></p>
+  </div>
+  <br>
+  <p>Room: (Coming soon!)</p> 
+  <input type="text" id="msg1" value="default">
+  <button onclick="go()">Go!</button>
+  <br>
+  <br>
+  <div id="messages"></div>
+  <br>
+	<p id="istyping"></p>
+  <textarea rows="2" cols="50" id="msg" onkeyup="typed();if(event.key=='Enter'){send()}"></textarea>
+  <button onclick="send()">Send</button>
+</body>
+
+</html>
